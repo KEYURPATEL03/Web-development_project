@@ -1,0 +1,16 @@
+.content h1{
+    text-align: center;
+}
+.content h2 {
+    text-align: center;
+}
+.tbl,th,td{
+    margin-left:13%;
+    margin-top:13%;
+    border : 1px solid black ;
+    text-align: center;
+    width:50%;
+}
+#head{
+    background-color: gray;
+}
