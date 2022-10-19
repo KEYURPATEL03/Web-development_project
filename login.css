@@ -18,6 +18,14 @@ html {
   height: 100%;
 }
 
+.backdrop-student {
+  background-image: url("study.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: center;
+  height: 100%;
+}
+
 .login-container {
   width: 100%;
   padding: 15px 0px;
