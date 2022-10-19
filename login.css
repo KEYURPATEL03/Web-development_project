@@ -6,18 +6,16 @@ body {
   margin: 0px;
 }
 
+html {
+  min-height: 100%;
+}
+
 .backdrop {
-  background: rgb(238, 174, 202);
-  background: radial-gradient(
-    circle,
-    rgba(238, 174, 202, 1) 0%,
-    rgba(148, 187, 233, 1) 100%
-  );
   background-image: url("library.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  display: block;
   justify-content: center;
+  height: 100%;
 }
 
 .login-container {
@@ -89,7 +87,7 @@ header {
   margin-right: -1%;
   border-bottom: solid;
   border-color: transparent;
-  background-color: rgb(217, 240, 217);
+  background-color: rgb(255, 255, 255);
 }
 
 .logo {
@@ -106,6 +104,6 @@ header {
 
 .banner {
   border: 5px;
-  background-color: whitesmoke;
+  background-color: rgb(255, 255, 255);
   text-align: left;
 }
