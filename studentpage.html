@@ -1,161 +1,197 @@
 <!DOCTYPE html>
 <!--This version is incomplete. Any styling used is purely for visualization purposes and will be cut once the real css sheet is linked.-->
 
-<html>
+<html lan="en">
     <head>
+        <link rel="stylesheet" href="studentgrades.css" />
         <meta charset="UTF-8">
-        <meta name="description" content="Grades management system">
+        <meta name="description" content="Student page">
         <title>stoodle</title>
     </head>
     
     <body>
-    <style>
-        table, th, td{
-			border: 2px solid black;
-			border-collapse: collapse;
-            border-radius: 10px;
-			}
-	</style>
         <header>
-        <h1>Stoodle</h1>
+            <div class="banner">
+                <img src="stoodleLogo.png" class="logo" alt="Stoodle Logo">
+                <h1 class="gradeh1">Grades</h1>
+            </div>
         </header>
-      
+
+        <nav>
+            <a href="teachers.html">Home</a>
+            <a href="studentgrades.html">Grades</a>
+            <a href="information.html">Information</a>
+            <a href="contact_info.html">Contact</a>
+        </nav>
+        
+        <br>
+
         <main>
-            <table id="folder">
+        
+        <h2>SOEN 287 - Section Q</h2>
+        <h3>FALL 2022</h3>
+
+        <br>
+
+        <h2 class="h_center">First Name Last Name</h2>
+        <h3 class="h_center">Student ID: 123456789</h3>
+
+        <br>
+
+        <div class="div_info">        
+            <table class="t1">
                 <tr>
-                	<th style="font-size: 24px"> Assessments </th>
+                	<th class="category"> Project </th>
                  </tr>
                 <tr>
-	                <th style="border: 0px; font-size: 14px">Weight of this category:</th>
+	                <th class="category_info">Weight of this category: 20%</th>
                 </tr>
                 <tr>
-	                <th style="border: 0px; font-size: 14px; text-align: left">Average:</th>
+	                <th class="category_info">Average:</th>
                 </tr>
             </table>
-            <table style="border: 2px solid black">
+            
+            <table>
+
                 <tr>
-                	<th style="border: 0px"></th>
-                	<th style="font-size: 20px"> Grade </th>
-                	<th style="font-size: 20px"> Median </th>
-                	<th style="font-size: 20px"> Average </th>
-                	<th style="font-size: 20px"> Standard Deviation </th>
-                    <th style="font-size: 20px"> Weight</th>
+                	<th></th>
+                	<th class="stat"> Grade </th>
+                	<th class="stat"> Median </th>
+                	<th class="stat"> Average </th>
+                	<th class="stat"> Standard Deviation </th>
+                    <th class="stat"> Weight</th>
                 </tr>
+
                 <tr>
-                	<th style="font-size: 20px">Assessment #1</th>
-                    <td>12/15</td>
-                    <td>13.11212/15</td>
-                    <td>13.5/15</td>
-                    <td>2.4%</td>
-                    <td>10%</td>
+                	<th class="assessment"> Deliverable #1</th>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
                 </tr>
+
                 <tr>
-                	<th style="border: 0px"></th>
-                    <td colspan="5">Comments: Good work!</td>
+                	<th></th>
+                    <td class="teacher_comment" colspan="5">Comments:</td>
                 </tr>
+
                 <tr> 
-                	<th style="font-size: 20px">Assessment #2</th>
-                    <td>12/15</td>
-                    <td>13.11212/15</td>
-                    <td>13.5/15</td>
-                    <td>2.4%</td>
-                    <td>10%</td>
+                	<th class="assessment"> Deliverable #2</th>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
                 </tr>
+
                 <tr>
-                	<th style="border: 0px"></th>
-                    <td colspan="5">Comments: Good work!</td>
+                	<th></th>
+                    <td class="teacher_comment" colspan="5">Comments:</td>
                 </tr>
+
                 <tr> 
-                	<th style="font-size: 20px">Assessment #3</th>
-                    <td>12/15</td>
-                    <td>13.11212/15</td>
-                    <td>13.5/15</td>
-                    <td>2.4%</td>
-                    <td>10%</td>
+                	<th class="assessment"> Deliverable #3</th>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
                 </tr>
+
                 <tr>
-                	<th style="border: 0px"></th>
-                    <td colspan="5">Comments: Good work!</td>
+                	<th></th>
+                    <td class="teacher_comment" colspan="5">Comments:</td>
                 </tr>
+
                 <tr> 
-                	<th style="font-size: 20px">Assessment #4</th>
-                    <td>12/15</td>
-                    <td>13.11212/15</td>
-                    <td>13.5/15</td>
-                    <td>2.4%</td>
-                    <td>10%</td>
+                	<th class="assessment"> Final Project</th>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
                 </tr>
+
                 <tr>
-                	<th style="border: 0px"></th>
-                    <td colspan="5">Comments: Good work!</td>
+                	<th></th>
+                    <td class="teacher_comment" colspan="5">Comments:</td>
                 </tr>
+
+                <tr>
+                    <th></th>
+                </tr>
+
             </table>
-            </br>
-            <table id="Exams">
+        </div>  
+
+        <br>
+        
+        <div class="div_info">
+            <table class="t1">
                 <tr>
-                	<th style="font-size: 24px"> Exams </th>
+                	<th class="category"> Exams </th>
                  </tr>
+
                 <tr>
-	                <th style="font-size: 14px">Weight of this category:</th>
+	                <th class="category_info">Weight of this category: 80%</th>
                 </tr>
+                
                 <tr>
-	                <th style="font-size: 14px">Average:</th>
+	                <th class="category_info">Average:</th>
                 </tr>
              </table>
+             
              <table>
                 <tr>
                 	<th></th>
-                	<th style="font-size: 20px"> Grade </th>
-                	<th style="font-size: 20px"> Median </th>
-                	<th style="font-size: 20px"> Average </th>
-                	<th style="font-size: 20px"> Standard Deviation </th>
-                    <th style="font-size: 20px"> Weight</th>
+                	<th class="stat"> Grade </th>
+                	<th class="stat"> Median </th>
+                	<th class="stat"> Average </th>
+                	<th class="stat"> Standard Deviation </th>
+                    <th class="stat"> Weight</th>
                 </tr>
+
                 <tr>
-                	<th style="font-size: 20px">Midterm</th>
-                    <td>12/15</td>
-                    <td>13.11212/15</td>
-                    <td>13.5/15</td>
-                    <td>2.4%</td>
-                    <td>10%</td>
+                	<th class="assessment">Midterm</th>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
                 </tr>
+
+                <tr>
+                    <th></th>
+                </tr>
+                
                 <tr> 
-                	<th style="font-size: 20px">Final</th>
-                    <td>12/15</td>
-                    <td>13.11212/15</td>
-                    <td>13.5/15</td>
-                    <td>2.4%</td>
-                    <td>10%</td>
+                	<th class="assessment">Final</th>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
                 </tr>
+
+                <tr>
+                    <th></th>
+                </tr>
+            
             </table>
-            </br>
-            <table>
-                <caption>John Smith</caption>
-                <tr>
-                <th> Assessments </th>
-                <th> Weight</th>
-                <th> Grade </th>
-                <th> Median </th>
-                <th> Average </th>
-                <th> Standard Deviation </th>
-                </tr>
-                <tr>
-                	<th>Assessment #1</th>
-                </tr>
-                <tr> 
-                	<th>Assessment #2</th>
-                </tr>
-                <tr> 
-                	<th>Assessment #3</th>
-                </tr>
-                <tr> 
-                	<th>Assessment #4</th>
-                </tr>
-            </table>
+        </div>
+
+        <br>
+
+        <h1>Final Grade: </h1>
+        
         </main>
+
+        <br>
       
         <footer>
-        </footer>
+            <a href="disclaimer.html">Privacy/Disclaimer Statement</a>
+        </footer>  
       
     </body>
 </html>
