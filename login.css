@@ -2,10 +2,6 @@
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-body {
-  margin: 0px;
-}
-
 html {
   min-height: 100%;
 }
@@ -30,9 +26,7 @@ html {
   width: 100%;
   padding: 15px 0px;
   display: flex;
-  justify-content: center;
-  
-  
+  justify-content: center; 
 }
 
 .login-big {
@@ -41,8 +35,6 @@ html {
   display: block;
   align-items: center;
 }
-
-
 
 .login {
   text-align: center;
@@ -81,7 +73,7 @@ input {
   font-weight: bold;
 }
 
-.forgot-text {
+.links {
   font-size: small;
   color: rgb(48, 48, 48);
 }
