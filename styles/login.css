@@ -1,0 +1,109 @@
+* {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+html {
+  min-height: 100%;
+}
+
+.backdrop {
+  background-image: url("library.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: center;
+  height: 100%;
+}
+
+.backdrop-student {
+  background-image: url("study.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: center;
+  height: 100%;
+}
+
+.login-container {
+  width: 100%;
+  padding: 15px 0px;
+  display: flex;
+  justify-content: center; 
+}
+
+.login-big {
+  width: 40%;
+  padding: 15px 100px;
+  display: block;
+  align-items: center;
+}
+
+.login {
+  text-align: center;
+  display: inline-block;
+  background-color: white;
+  padding: 70px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 15px rgb(67, 67, 67);
+}
+
+.login-title {
+  padding: 0px 10px;
+}
+
+input {
+  padding: 10px 10px;
+  border-radius: 10px;
+  border-color: transparent;
+  background-color: rgb(232, 232, 232);
+  display: inline-block;
+}
+
+.inputs {
+  padding: 5px;
+}
+
+.submit-button-container {
+  padding: 10px;
+}
+
+.submit-button {
+  padding: 5px 30px;
+  font-size: large;
+  background-color: rgb(56, 203, 56);
+  color: white;
+  font-weight: bold;
+}
+
+.links {
+  font-size: small;
+  color: rgb(48, 48, 48);
+}
+
+header {
+  position: relative;
+  left: 0%;
+  top: 0%;
+  margin-left: -1%;
+  margin-top: -1%;
+  margin-right: -1%;
+  border-bottom: solid;
+  border-color: transparent;
+  background-color: rgb(255, 255, 255);
+}
+
+.logo {
+  width: 15%;
+  vertical-align: middle;
+  padding: 5px 10px;
+  padding-top: 15px;
+}
+
+.icon {
+  width: 40%;
+  height: auto;
+}
+
+.banner {
+  border: 5px;
+  background-color: rgb(255, 255, 255);
+  text-align: left;
+}
