@@ -1,0 +1,107 @@
+header{
+    margin-left: 25%;
+    height: 15%;
+    width: 100%;
+    padding-top: 1%;
+}
+header ul {
+    display: inline-block;
+    margin-left: 55%;
+}
+ul li{
+list-style:none;
+display: inline-block;
+
+}
+ul li a{
+    text-decoration: none;
+    font-size: 14px;
+    font-family: arial;
+    color:#1e1e1e;
+    padding:0 40px;
+}
+
+ul li a:hover{
+    color: blue;
+}
+.HomeContent{
+    background-image: url('university.png');
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-size:100% 100%;
+    
+    position: fixed;
+    height: 100%;
+    left: 0%;
+    right: 0%;
+    width: 100%;
+    text-align: centre;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+
+.HomeContent h4 {
+    margin-right: 40%;
+    text-align: center;
+}
+
+.WelcomeMessage{
+    position: absolute;
+    top: 25%;
+    height: 70%;
+    left: 30%;
+    bottom: 19%;
+    right: 0%;
+    text-align: centre;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman',serif;
+
+}
+.button{
+    position: absolute;
+    top: 15%;
+    left: 7%;
+    background-color: #9E7676;
+    border: none;
+    color: white;
+    padding: 15px 63px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    margin-left: 2.5%;
+    
+   
+}
+.button a:hover{
+    background-color:#594545;
+}
+.button1 a:hover{
+    background-color:#594545;
+}
+.button1{
+    position: absolute;
+    top: 15%;
+    left: 30%;
+    background-color: #9E7676;
+    border: none;
+    color: white;
+    padding: 15px 63px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+
+   
+}  
+.footer{
+    background-color: rgb(210, 210, 229);
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: 8%;
+    bottom: 0%;
+    left:0%;
+  }
