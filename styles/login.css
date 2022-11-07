@@ -6,12 +6,13 @@ html {
   min-height: 100%;
 }
 
-.backdrop {
+.backdrop-teacher {
   background-image: url("library.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   justify-content: center;
   height: 100%;
+  margin: 0;
 }
 
 .backdrop-student {
@@ -20,33 +21,28 @@ html {
   background-repeat: no-repeat;
   justify-content: center;
   height: 100%;
+  margin: 0%;
 }
 
 .login-container {
   width: 100%;
-  padding: 15px 0px;
+  padding: 70px 0px;
   display: flex;
   justify-content: center; 
-}
-
-.login-big {
-  width: 40%;
-  padding: 15px 100px;
-  display: block;
-  align-items: center;
 }
 
 .login {
   text-align: center;
   display: inline-block;
   background-color: white;
-  padding: 70px;
+  padding: 100px;
   border-radius: 20px;
   box-shadow: 0px 0px 15px rgb(67, 67, 67);
+  font-size: large;
 }
 
 .login-title {
-  padding: 0px 10px;
+  white-space: nowrap;
 }
 
 input {
@@ -66,39 +62,37 @@ input {
 }
 
 .submit-button {
-  padding: 5px 30px;
+  padding: 7px 30px;
   font-size: large;
   background-color: rgb(56, 203, 56);
   color: white;
   font-weight: bold;
+  transition: 0.3s;
+  border-radius: 10px;
+  border-color: transparent;
+}
+
+.submit-button:hover {
+  cursor: pointer;
+  background-color: rgb(35, 156, 35);
 }
 
 .links {
   font-size: small;
   color: rgb(48, 48, 48);
-}
-
-header {
-  position: relative;
-  left: 0%;
-  top: 0%;
-  margin-left: -1%;
-  margin-top: -1%;
-  margin-right: -1%;
-  border-bottom: solid;
-  border-color: transparent;
-  background-color: rgb(255, 255, 255);
+  white-space: nowrap;
+  padding: 10px 0px 0px 0px;
 }
 
 .logo {
-  width: 15%;
+  width: 200px;
   vertical-align: middle;
-  padding: 5px 10px;
-  padding-top: 15px;
+  position: relative;
+  padding: 1px 1px;
 }
 
 .icon {
-  width: 40%;
+  width: 120px;
   height: auto;
 }
 
@@ -106,4 +100,14 @@ header {
   border: 5px;
   background-color: rgb(255, 255, 255);
   text-align: left;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  top: 0px;
+  min-height: 40px;
+  width: 100%;
+  border-bottom: solid;
+  border-color: transparent;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 15px rgb(67, 67, 67);
 }
