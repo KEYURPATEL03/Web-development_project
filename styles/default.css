@@ -26,7 +26,9 @@ body {
     box-shadow: 0px 0px 15px rgb(67, 67, 67);
     justify-content: space-between;
     
+    
 }
+
 .banner-title {
     display: flex;
     text-align: center;
@@ -73,15 +75,13 @@ ul li a:hover {
     padding: 1px 1px;
 }
 nav {
-    position:fixed;
-    margin-top:-4px;
+    position: fixed;
     left:0%;
-    top:10%;
-    height:85%;
+    height:100%;
     width:15%;
     padding-top:3%;
     background-color:#FFF8EA;
-    border-right:solid;
+
 }
 
 nav a {
@@ -92,7 +92,7 @@ nav a {
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-decoration: underline;
     font-size:22px;
-    transition: opacity 0.15s;
+    transition: 0.15s;
 }
 
 nav a:hover {
@@ -103,12 +103,11 @@ nav a:hover {
 .content {
     position:fixed;
     left:15.3%;
-    top:9.3%;
     height:100%;
     width:85%;
 }
 footer {
-    position:fixed;
+    position: fixed;
     padding: 7px 0px;
     left:0%;
     bottom:0%;
