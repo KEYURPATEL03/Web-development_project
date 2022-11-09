@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <link rel="stylesheet" href="styles/contact_info.css" />
+    <link rel="stylesheet" href="styles/default.css">
+    <meta charset="utf-8">
+    <title>Contact Details</title>
+</head>
+
+<body>
+    <header class="banner">
+        <a href="homepage.html"><img src="styles/stoodle-logo.png" class="logo"></a>
+        <div class="banner-title">Contact Info</div>
+        <ul class="banner-info">
+            <li><a href="AboutUs.html">About Us</a></li>
+            <li><a href="Support.html">Support</a></li>
+        </ul>
+    </header>
+
+    <nav>
+        <a href="teachers.html" id="dashboard">Dashboard</a>
+        <a href="participant.html">Student List </a>
+        <a href="upload.html">Upload Documents</a>
+        <a href="grades.html">Input Grades</a>
+        <a href="tcontact_info.html">Contact Info</a>
+    </nav>
+
+    <div class="contact_content">
+        <h2><U>Your Current contact details are:</U></h2>
+        <table>
+            <tr id="head">
+                <th> Instructor </th>
+                <th> Section </th>
+                <th> Lecture day(s) </th>
+                <th> Lecture Time </th>
+                <th> Contact </th>
+                <th> Office hours (Day)</th>
+                <th> Office hours (Time)</th>
+            </tr>
+
+            <tr>
+                <td> Abdelghani
+                    Benharref </td>
+                <td>Q</td>
+                <td> TUE & THU </td>
+                <td>10:15 - 11:30</td>
+                <td><a href="abdelghani.benharref@concordia.ca">abdelghani.benharref@concordia.ca</a></td>
+                <td> TUE </td>
+                <td>13:00 - 14:30</td>
+            </tr>
+
+        </table>
+    </div>
+    <div class="edit_contact">
+        <h2><U>To edit your contact details enter & submit:</U></h2>
+        <form >
+            <label><b>Your name: </b></label>
+            <input type="text" placeholder="full name" id="name">
+            <br><br>
+
+            <label><b>Lecture Section: </b></label>
+            <input type="text" placeholder="section" id="section">
+            <br><br>
+
+            <label><b>Lecture Days: </b></label>
+            <input type="checkbox" name="Monday" id="Mon">MON
+            <input type="checkbox" name="Tuesday" id="Tue">TUE
+            <input type="checkbox" nam="Wednesday" id="Wed">WED
+            <input type="checkbox" name="Thursday" id="Thu">THU
+            <input type="checkbox" name="Friday" id="Fri">FRI
+            <input type="checkbox" nam="Saturday" id="Sat">SAT
+            <input type="checkbox" nam="Sunday" id="Sun">SUN
+            
+            <br><br>
+
+            <label><b>Lecture Time: </b></label>
+            <input type="time" placeholder="from" id="time_from" min="09:00" max="22:00" required >
+            <label>-</label>
+            <input type="time" placeholder="to" id="time_to" min="09:00" max="22:00" required>
+            <br><br>
+
+            <label><b>Your Email:</b></label>
+            <input type="email" name="email" id="instructor_email" onchange="checkEmail()">
+            <br><br>
+        
+            <label><b>Office hours (Day):</b></label>
+            <input type="checkbox" name="Monday" id="Mon_o">MON
+            <input type="checkbox" name="Tuesday" id="Tue_o">TUE
+            <input type="checkbox" nam="Wednesday" id="Wed_o">WED
+            <input type="checkbox" name="Thursday" id="Thu_o">THU
+            <input type="checkbox" name="Friday" id="Fri_o">FRI
+            <input type="checkbox" nam="Saturday" id="Sat_o">SAT
+            <input type="checkbox" nam="Sunday" id="Sun_o">SUN
+            <br><br>
+
+            <label><b>Office hours (Time): </b></label>
+            <input type="time" placeholder="from" id="time_from_o" min="09:00" max="22:00" required>
+            <label>-</label>
+            <input type="time" placeholder="to" id="time_to_o" min="09:00" max="22:00" required>
+            <br><br>
+
+            <input type="submit" name="submit" id="submit-button" onclick="checkEmptyInGive()">
+            <input type="reset" name ="reset" id="reset-button">
+        </form>
+    </div>
+
+
+    <footer>
+        <a href="disclaimer.html">Privacy/Disclaimer Statement</a>
+    </footer>
+
+    <script src="tcontact_info.js"></script>
+</body>
+
+</html>
