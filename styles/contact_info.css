@@ -1,16 +1,30 @@
+/* 
+Written by : Keyur Patel 
+*/
 
 .contact_content{
-    margin-top: 5%;
+    margin-top: 3.5%;
+    margin-left: 3.5%;
     text-align: center;
+  
 }
 table{
-    margin-left: 25%;
+    margin-left: 28%;
 }
 .table,th,td{
-    border : 1px solid black ;
+    
+    border : 2px solid black ;
     border-collapse: collapse;
     text-align: center;
 }
-#head{
-    background-color: gray;
+thead{
+    background-color:#A9AF7E;
+}
+.edit_contact{
+    text-align: center;
+}
+
+.content {
+    text-align: center;
+    justify-content: center;
 }
