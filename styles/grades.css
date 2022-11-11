@@ -1,6 +1,44 @@
-.grades_content{
-    margin-top: 5%;
+h2,h3{
+   
+    padding-left:20%
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:rgb(225, 226, 226);
+    padding-bottom:3%;
+}
+.page{
+    
+    background-color: rgb(194, 220, 228);
+    
+}
+
+td{
+    border: 0.5px solid rgb(0, 0, 0);
+    padding: 3px;
     text-align: center;
+
+}
+th{
+    border: 0.5px solid rgb(0, 0, 0);
+    padding: 10px;
+    
+
+}
+
+#data{
+    margin-bottom:3px;
+    
+}
+
+#data input, button{
+    padding:6px;
+    width:110px;
+    text-align: center;
+    
+
 }
 footer {
     position:fixed;

@@ -6,6 +6,11 @@ html {
   min-height: 100%;
 }
 
+#loginErrorMassage {
+  font-size: medium;
+  color: red;
+}
+
 .backdrop-teacher {
   background-image: url("library.jpg");
   background-size: cover;
@@ -28,7 +33,7 @@ html {
   width: 100%;
   padding: 70px 0px;
   display: flex;
-  justify-content: center; 
+  justify-content: center;
 }
 
 .login {
@@ -68,8 +73,6 @@ input {
   color: white;
   font-weight: bold;
   transition: 0.3s;
-  border-radius: 10px;
-  border-color: transparent;
 }
 
 .submit-button:hover {
@@ -110,4 +113,8 @@ input {
   border-color: transparent;
   background-color: rgb(255, 255, 255);
   box-shadow: 0px 0px 15px rgb(67, 67, 67);
+}
+
+.formHidden {
+  display: none;
 }

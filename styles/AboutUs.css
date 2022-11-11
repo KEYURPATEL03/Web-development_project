@@ -1,0 +1,29 @@
+
+body{
+    background-color: rgb(245, 237, 227);
+}
+h1{
+    color:#383b39
+}
+.container{
+    background: rgb(220, 220, 239);
+    padding-top:0.1%;
+    background-image: linear-gradient(rgba(147, 143, 143, 0.5), rgba(255,255,255,0.5)), url("college.jpg");
+   
+}
+img{
+    position:fixed;
+    margin-left: 2%;
+
+
+}
+.adjust-line-height{
+    line-height:3em
+}
+
+p{
+    text-align: center;
+    position:fixed;
+    padding-left:45%;
+    padding-top:10%;
+}
