@@ -1,9 +1,10 @@
 .backdrop-home {
     background-image: url('classroom.jpg');
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100% 100%;
-
+    background-size: cover;
+    justify-content: center;
+    height: 100%;
+    margin: 0;
     position: fixed;
     height: 100%;
     left: 0%;
@@ -23,7 +24,7 @@
   background-color: #497959;
   background-image: url('chalkboard.jpg');
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
   display: inline-block;
   padding: 90px;
   border-radius: 10px;
