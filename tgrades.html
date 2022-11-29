@@ -10,7 +10,7 @@
 
 <body>
   <header class="banner">
-    <a href="homepage.html"><img src="styles/stoodle-logo.png" class="logo"></a>
+    <a href="index.html"><img src="styles/stoodle-logo.png" class="logo"></a>
     <div class="banner-title">Input Grades</div>
     <ul class="banner-info">
       <li><a href="AboutUs.html">About Us</a></li>
@@ -32,159 +32,109 @@
 
     <div class="container">
       <div id="data">
-        <h3>
-         Deliverable 1
-        </h3>
-        <input type="text" id="lastname" placeHolder="Enter Last Name ">
-        <input type="text" id="firstname" placeHolder="Enter First Name">
-        <input type="number" id="studentID" placeHolder="Enter Student ID">
-        <input type="number" id="grade" placeHolder="Enter Grade">
-        <input type="text" id="comment" placeHolder="Enter Comment">
-        <button onclick="addHtmlTableRow()">Add</button>
-
-
+       
       </div>
-      <table id="myTable">
-        <tr>
-          <th>Last Name</th>
-          <th>First Name</th>
-          <th>Student ID</th>
-          <th>Grade</th>
-          <th>Comment</th>
-        </tr>
-        <tr>
-          <td>Smith</td>
-          <td>Will</td>
-          <td>40037435</td>
-          <td>80</td>
-          <td>Great work!</td>
-        </tr>
+      <hr>
+      <br>
+      
+        <div class = identification>
+        Last Name: <input type="text" name="lname" id="lname">
+        First Name: <input type="text" name="fname" id="fname">
+        Student ID: <input type="number" name="studentID" id="studentID">
+      </div><br>
+      <div class = deliverables>
+        Deliverable #1: <input type="number" name="deliverable1" id="deliverable1">
+        Deliverable #2: <input type="number" name="deliverable2" id="deliverable2">
+        Deliverable #3: <input type="number" name="deliverable3" id="deliverable3">
+        </div><br>
+        <div class = mfgrades>
+        Midterm: <input type="number" name="midterm" id="midterm">
+        Final: <input type="number" name="final" id="final">
+        Feedback: <input type="text" name="feedback" id="feedback">
+      </div><br>
+        <button onclick="editRow();">Edit Row</button><br><br>
+        <table class = table>
+        <table id="table">
+            
+            <tr>
+                <th>Last Name</th>
+                <th>First Name</th>
+                <th>Student ID</th>
+                <th>Deliverable #1</th>
+                <th>Deliverable #2</th>
+                <th>Deliverable #3</th>
+                <th>Midterm</th>
+                <th>Final</th>
+                <th>Feedback</th>
+                
+            </tr>
+            
+            <tr>
+                <td>Smith</td>
+                <td>Will</td>
+                <td>40056734</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td></td>
+            </tr>
+            
+            <tr >
+              <td>Doe</td>
+              <td>John</td>
+              <td>40056564</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td></td>
+            </tr>
+            
+            <tr>
+              <td>Small</td>
+              <td>Brian</td>
+              <td>40056123</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td></td>
+            </tr>
+            
+            <tr>
+              <td>Michelle</td>
+              <td>Tara</td>
+              <td>40082136</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td></td>
+            </tr>
+            
+            <tr>
+              <td>Cimorelli</td>
+              <td>Jill</td>
+              <td>40056712</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td></td>
+            </tr>
+            
+        </table>
       </table>
     </div>
   </div>
-  <hr>
-  <div class="container">
-    <div id="data">
-      <h3>
-       Deliverable 2
-      </h3>
-      <input type="text" id="lastname2" placeHolder="Enter Last Name ">
-      <input type="text" id="firstname2" placeHolder="Enter First Name">
-      <input type="number" id="studentID2" placeHolder="Enter Student ID">
-      <input type="number" id="grade2" placeHolder="Enter Grade">
-      <input type="text" id="comment2" placeHolder="Enter Comment">
-      <button onclick="addHtmlTableRow2()">Add</button>
+  
 
-    </div>
-    <table id="myTable2">
-      <tr>
-        <th>Last Name</th>
-        <th>First Name</th>
-        <th>Student ID</th>
-        <th>Grade</th>
-        <th>Comment</th>
-      </tr>
-      <tr>
-        <td>Smith</td>
-        <td>Will</td>
-        <td>40037435</td>
-        <td>80</td>
-        <td>Great Work</td>
-      </tr>
-    </table>
-  </div>
-  <hr>
-  <div class="container">
-    <div id="data">
-      <h3>
-        Deliverable 3
-      </h3>
-      <input type="text" id="lastname3" placeHolder="Enter Last Name ">
-      <input type="text" id="firstname3" placeHolder="Enter First Name">
-      <input type="number" id="studentID3" placeHolder="Enter Student ID">
-      <input type="number" id="grade3" placeHolder="Enter Grade">
-      <input type="text" id="comment3" placeHolder="Enter Comment">
-      <button onclick="addHtmlTableRow3()">Add</button>
-
-    </div>
-    <table id="myTable3">
-      <tr>
-        <th>Last Name</th>
-        <th>First Name</th>
-        <th>Student ID</th>
-        <th>Grade</th>
-        <th>Comment</th>
-      </tr>
-      <tr>
-        <td>Smith</td>
-        <td>Will</td>
-        <td>40037435</td>
-        <td>80</td>
-        <td>Great Work!</td>
-      </tr>
-    </table>
-  </div>
-  <hr>
-  <div class="container">
-    <div id="data">
-      <h3>
-        Midterm Exam
-      </h3>
-      <input type="text" id="lastname4" placeHolder="Enter Last Name ">
-      <input type="text" id="firstname4" placeHolder="Enter First Name">
-      <input type="number" id="studentID4" placeHolder="Enter Student ID">
-      <input type="number" id="grade4" placeHolder="Enter Grade">
-      <input type="text" id="comment4" placeHolder="Enter Comment">
-      <button onclick="addHtmlTableRowMidterm()">Add</button>
-
-    </div>
-    <table id="myTableMidterm">
-      <tr>
-        <th>Last Name</th>
-        <th>First Name</th>
-        <th>Student ID</th>
-        <th>Grade</th>
-        <th>Comment</th>
-      </tr>
-      <tr>
-        <td>Smith</td>
-        <td>Will</td>
-        <td>40037435</td>
-        <td>80</td>
-        <td>Great Work!</td>
-      </tr>
-    </table>
-  </div>
-  <hr>
-  <div class="container">
-    <div id="data">
-      <h3>
-        Final Exam
-      </h3>
-      <input type="text" id="lastname5" placeHolder="Enter Last Name ">
-      <input type="text" id="firstname5" placeHolder="Enter First Name">
-      <input type="number" id="studentID5" placeHolder="Enter Student ID">
-      <input type="number" id="grade5" placeHolder="Enter Grade">
-      <input type="text" id="comment5" placeHolder="Enter Comment">
-      <button onclick="addHtmlTableRowFinal()">Add</button>
-
-    </div>
-    <table id="myTableFinal">
-      <tr>
-        <th>Last Name</th>
-        <th>First Name</th>
-        <th>Student ID</th>
-        <th>Grade</th>
-        <th>Comment</th>
-      </tr>
-      <tr>
-        <td>Smith</td>
-        <td>Will</td>
-        <td>40037435</td>
-        <td>80</td>
-        <td>Great Work!</td>
-      </tr>
-    </table>
   </div>
 </div>
 

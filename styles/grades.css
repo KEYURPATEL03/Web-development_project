@@ -5,8 +5,9 @@
     flex-direction: column;
     align-items: center;
     background-color:rgb(225, 226, 226);
-    padding-bottom:3%;
+    padding-bottom:25%;
 }
+
 .page{
     
     background-color: rgb(194, 220, 228);
@@ -19,9 +20,13 @@ td{
     text-align: center;
 
 }
+tr:hover{
+    background-color:rgb(172, 173, 173)
+}
 th{
     border: 0.5px solid rgb(0, 0, 0);
     padding: 10px;
+    
     
 
 }
@@ -38,3 +43,4 @@ th{
     
 
 }
+
