@@ -1,0 +1,27 @@
+.upload_content {
+    margin-top: 5%;
+    text-align: center;
+}
+.fileupload {
+    border: 2px solid #ccc;
+    display: inline-block;
+    padding: 8px 32px;
+    cursor: pointer;
+}
+
+#fileupload {
+    box-sizing: content-box;
+}
+
+#uploadButton {
+    padding: 5px 5px;
+    font-size: large;
+    background-color: rgb(66, 207, 202);
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.fileupload-container {
+    text-align: center;
+}

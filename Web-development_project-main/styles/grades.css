@@ -1,0 +1,46 @@
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:rgb(225, 226, 226);
+    padding-bottom:25%;
+}
+
+.page{
+    
+    background-color: rgb(194, 220, 228);
+    
+}
+
+td{
+    border: 0.5px solid rgb(0, 0, 0);
+    padding: 3px;
+    text-align: center;
+
+}
+tr:hover{
+    background-color:rgb(172, 173, 173)
+}
+th{
+    border: 0.5px solid rgb(0, 0, 0);
+    padding: 10px;
+    
+    
+
+}
+
+#data{
+    margin-bottom:3px;
+    
+}
+
+#data input, button{
+    padding:6px;
+    width:110px;
+    text-align: center;
+    
+
+}
+

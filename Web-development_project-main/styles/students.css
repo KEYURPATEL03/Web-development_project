@@ -1,0 +1,30 @@
+.content {
+
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.7;
+  text-align: center;
+  justify-items: center;
+}
+
+table {
+  table-layout: auto;
+  border-collapse: collapse;
+  text-align: center;
+  
+}
+
+.tbl, th, td {
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid black;
+  width: 55%;
+}
+
+caption {
+  padding: 1% 1% 1% 1%;
+  font-size: 30px;
+  color: white;
+  background-color: #73b66b;
+}

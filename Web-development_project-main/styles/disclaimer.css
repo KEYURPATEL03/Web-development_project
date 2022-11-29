@@ -1,0 +1,12 @@
+
+.dis_content {
+    margin-top: 50px;
+    position: fixed;
+    background-image:url(disbg.png);
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    height:100%;
+    width:100%;
+    text-align: center;
+}
