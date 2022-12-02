@@ -10,7 +10,7 @@
 
 <body>
     <header class="banner">
-        <a href="index.html"><img src="styles/stoodle-logo.png" class="logo"></a>
+        <a href="homepage.html"><img src="styles/stoodle-logo.png" class="logo"></a>
         <div class="banner-title">Contact Info</div>
         <ul class="banner-info">
             <li><a href="AboutUs.html">About Us</a></li>
@@ -20,8 +20,8 @@
 
     <nav>
         <a href="teachers.html" id="dashboard">Dashboard</a>
-        <a href="participant.html">Student List </a>
-        <a href="upload.html">Upload Documents</a>
+        <a href="participant.php">Student List </a>
+        <a href="upload.php">Upload Documents</a>
         <a href="tgrades.html">Input Grades</a>
         <a href="tcontact_info.html">Contact Info</a>
     </nav>
@@ -63,7 +63,7 @@
             <input type="time" placeholder="to" id="time_to" name="hours" min="08:00" max="23:00" required>
             <br><br>
 
-            <input type="submit" name="add" id="add-button" value="Add" onclick="check_add_info();">
+            <input type="button" name="add" id="add-button" value="Add" onclick="check_add_info();">
             <input type="reset"id="reset-button" name="reset">
 
             <h2><U>Your Current contact details are:</U></h2>
