@@ -2,7 +2,7 @@
 class method extends mysqli{
     private $state_csv = false;
     public function __construct(){
-            parent::__construct("sql311.epizy.com","epiz_33100670","kgKnMKhpvKi","epiz_33100670_stoodle");
+            parent::__construct("127.0.0.1","root","","test");
             if($this->connect_error){
                 echo "fail to connect to database :".$this->connect_error;
             }
@@ -33,9 +33,18 @@ class method extends mysqli{
         {
             $this->state_csv = false;
             $file = fopen($file,'r');
-            while($row =fgetcsv($file))
+            while($row = fgetcsv($file))
             {
-                $q = "UPDATE student SET studentID = $row[0],studentName = $row[1],del1 = $row[2],del2 = $row[3],del3 = $row[4],midterm = $row[5],final = $row[6],feedback = $row[7] WHERE studentID = $row[0]";
+                $id = $row[0];
+                $name = $row[1];
+                $del1 = $row[2];
+                $del2 = $row[3];
+                $del3 = $row[4];
+                $midterm = $row[5];
+                $final = $row[6];
+                $feedback = $row[7];
+                
+                $q = "UPDATE student SET del1 = '$del1',del2 = '$del2',del3 = '$del3',midterm = '$midterm',final = '$final',feedback = '$feedback' WHERE studentID = '$id'";
                 
                 if($this->query($q)){
                     $this->state_csv = true;
