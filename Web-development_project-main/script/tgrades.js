@@ -1,36 +1,37 @@
-var table = document.getElementById("table"),rIndex;
-            
-            for(var i = 1; i < table.rows.length; i++)
-            {
-                table.rows[i].onclick = function()
-                {
-                    rIndex = this.rowIndex;
-                    console.log(rIndex);
-                    
-                    document.getElementById("lname").value = this.cells[0].innerHTML;
-                    document.getElementById("fname").value = this.cells[1].innerHTML;
-                    document.getElementById("studentID").value = this.cells[2].innerHTML;
-                    document.getElementById("deliverable1").value = this.cells[3].innerHTML;
-                    document.getElementById("deliverable2").value = this.cells[4].innerHTML;
-                    document.getElementById("deliverable3").value = this.cells[5].innerHTML;
-                    document.getElementById("midterm").value = this.cells[6].innerHTML;
-                    document.getElementById("final").value = this.cells[7].innerHTML;
-                    document.getElementById("feedback").value = this.cells[8].innerHTML;
-                };
-            }
-            
-            
-           // edit the row
-            function editRow()
-            {
-                table.rows[rIndex].cells[0].innerHTML = document.getElementById("lname").value;
-                table.rows[rIndex].cells[1].innerHTML = document.getElementById("fname").value;
-                table.rows[rIndex].cells[2].innerHTML = document.getElementById("studentID").value;
-                table.rows[rIndex].cells[3].innerHTML = document.getElementById("deliverable1").value;
-                table.rows[rIndex].cells[4].innerHTML = document.getElementById("deliverable2").value;
-                table.rows[rIndex].cells[5].innerHTML = document.getElementById("deliverable3").value;
-                table.rows[rIndex].cells[6].innerHTML = document.getElementById("midterm").value;
-                table.rows[rIndex].cells[7].innerHTML = document.getElementById("final").value;
-                table.rows[rIndex].cells[8].innerHTML = document.getElementById("feedback").value;
-            }
-
+function addHtmlTableRow(){
+    var table = document.getElementById("myTable"),
+    newRow = table.insertRow(table.length),
+    cell1 = newRow.insertCell(0),
+    cell2 = newRow.insertCell(1),
+    cell3 = newRow.insertCell(2),
+    cell4 = newRow.insertCell(3),
+    cell5 = newRow.insertCell(4),
+    cell6 = newRow.insertCell(5),
+    cell7 = newRow.insertCell(6),
+    cell8 = newRow.insertCell(7),
+    cell9 = newRow.insertCell(8),
+    
+    lname = document.getElementById("lname").value,
+    fname = document.getElementById("fname").value,
+    studentID = document.getElementById("studentID").value,
+    deliverable1 = document.getElementById("deliverable1").value,
+    deliverable2 = document.getElementById("deliverable2").value,
+    deliverable3 = document.getElementById("deliverable3").value,
+    midterm = document.getElementById("midterm").value,
+    final = document.getElementById("final").value,
+    feedback = document.getElementById("feedback").value;
+    
+    cell1.innerHTML = lname;
+    cell2.innerHTML = fname;
+    cell3.innerHTML = studentID;
+    cell4.innerHTML = deliverable1;
+    cell5.innerHTML = deliverable2;
+    cell6.innerHTML = deliverable3;
+    cell7.innerHTML = midterm;
+    cell8.innerHTML = final;
+    cell9.innerHTML = feedback;
+    
+    }
+   
+    
+    

@@ -1,5 +1,5 @@
-.content {
-    background-color: #E8DFCA;
+.content .csv{
+    margin-left: 23%;
 }
 
 .content h2 {
@@ -14,6 +14,7 @@ td {
     text-align: center;
     width: 50%;
 }
+
 
 #head {
     background-color: gray;

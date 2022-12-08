@@ -15,12 +15,13 @@
     <ul class="banner-info">
       <li><a href="AboutUs.html">About Us</a></li>
       <li><a href="Support.html">Support</a></li>
+      <li><a href="index.html">Logout</a></li>
     </ul>
   </header>
   <nav>
     <a href="teachers.html" id="dashboard">Dashboard</a>
-    <a href="participant.html">Student List </a>
-    <a href="upload.html">Upload Documents</a>
+    <a href="participant.php">Student List </a>
+    <a href="upload.php">Upload Documents</a>
     <a href="tgrades.html">Input Grades</a>
     <a href="tcontact_info.html">Contact Info</a>
   </nav>
@@ -52,9 +53,11 @@
         Final: <input type="number" name="final" id="final">
         Feedback: <input type="text" name="feedback" id="feedback">
       </div><br>
-        <button onclick="editRow();">Edit Row</button><br><br>
+        <button onclick="addHtmlTableRow();">Add Row</button><br><br>
+       
+        
         <table class = table>
-        <table id="table">
+        <table id="myTable">
             
             <tr>
                 <th>Last Name</th>
@@ -73,60 +76,60 @@
                 <td>Smith</td>
                 <td>Will</td>
                 <td>40056734</td>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td></td>
+                <td>54</td>
+                <td>65</td>
+                <td>34</td>
+                <td>65</td>
+                <td>76</td>
+                <td>great!</td>
             </tr>
             
             <tr >
               <td>Doe</td>
               <td>John</td>
               <td>40056564</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td></td>
+              <td>54</td>
+              <td>65</td>
+              <td>34</td>
+              <td>65</td>
+              <td>76</td>
+              <td>great!</td>
             </tr>
             
             <tr>
               <td>Small</td>
               <td>Brian</td>
               <td>40056123</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td></td>
+              <td>54</td>
+              <td>65</td>
+              <td>34</td>
+              <td>65</td>
+              <td>76</td>
+              <td>great!</td>
             </tr>
             
             <tr>
               <td>Michelle</td>
               <td>Tara</td>
               <td>40082136</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td></td>
+              <td>54</td>
+                <td>65</td>
+                <td>34</td>
+                <td>65</td>
+                <td>76</td>
+                <td>great!</td>
             </tr>
             
             <tr>
               <td>Cimorelli</td>
               <td>Jill</td>
               <td>40056712</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td></td>
+              <td>54</td>
+                <td>65</td>
+                <td>34</td>
+                <td>65</td>
+                <td>76</td>
+                <td>great!</td>
             </tr>
             
         </table>

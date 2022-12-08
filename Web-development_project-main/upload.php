@@ -1,3 +1,11 @@
+<?php
+include("methods.php");
+$method = new method();
+   //         if(isset($_POST['sub'])){
+        //        $method->import($_FILES['file']['tmp_name']);
+       //     }
+?>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
@@ -15,31 +23,35 @@
         <ul class="banner-info">
             <li><a href="AboutUs.html">About Us</a></li>
             <li><a href="Support.html">Support</a></li>
-            <li><a href="index.html">Logout</a></li>
         </ul>
     </header>
 
     <nav>
         <a href="teachers.html" id="dashboard">Dashboard</a>
-        <a href="participant.html">Student List </a>
-        <a href="upload.html">Upload Documents</a>
+        <a href="participant.php">Student List </a>
+        <a href="upload.php">Upload Documents</a>
         <a href="tgrades.html">Input Grades</a>
         <a href="tcontact_info.html">Contact Info</a>
     </nav>
 
+
     <div class="content">
-        <h2>Upload documents like assignments & slides here:</h2>
+        <h2>Upload documents assignments & slides here:</h2>
         <div class="fileupload-container">
-        <label class="fileupload">
-            <input type="file" />
-        </label>
-        <input type="submit" value="Upload" id="uploadButton">
+        
+            <form method="post" enctype = "multipart/form-data">
+                <label>Choose a .csv File</label>
+                <input type="file" name="file" accept=".csv">
+                <button type = "submit" name="sub" value="import" id="uploadButton">Import</button>
+            </form>
+            
+
+
+        </div>
     </div>
 
-        <h2> IN CONSTRUCTION : WORK IN PROGRESS!!</h2>
-    </div>
+   
 
-    <script src="script/fileUpload.js"></script>
 
 </body>
 
