@@ -38,6 +38,12 @@
     $username = "epiz_33100670";
     $password = "kgKnMKhpvKi";
     $dbname = "epiz_33100670_stoodle";
+    
+    $deliv1 = array();
+    $deliv2 = array();
+    $deliv3 = array();
+    $midExam = array();
+    $finExam = array();
 
     // Create connection
     $conn = mysqli_connect($servername, $username, $password, $dbname);
