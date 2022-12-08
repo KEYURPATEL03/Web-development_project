@@ -1,0 +1,21 @@
+.content .csv{
+    margin-left: 23%;
+}
+
+.content h2 {
+    text-align: center;
+}
+
+.tbl_2,
+th,
+td {
+    margin-left: 23%;
+    border: 1px solid black;
+    text-align: center;
+    width: 50%;
+}
+
+
+#head {
+    background-color: gray;
+}

@@ -1,0 +1,11 @@
+
+.tbl,th,td{
+    margin-left:23%;
+    border : 1px solid black ;
+    text-align: center;
+    width:55%;
+    border-collapse: collapse;
+}
+#head{
+    background-color: gray;
+}

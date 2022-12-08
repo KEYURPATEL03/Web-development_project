@@ -1,0 +1,64 @@
+.gradeh1 {
+    float: right;
+}
+
+h2, h3 {
+text-align: center;
+}
+
+
+table {
+    background-color: white;
+    border: 2px solid black;
+    border-collapse: collapse;
+    border-radius: 10px;
+    text-align: center;
+    width: 1000px;
+}
+
+.t1 {
+    background-color: transparent;
+    border: 0px;
+    border-collapse: collapse;
+}
+
+td {
+    background-color: aquamarine;
+    padding: 10px;
+}
+
+.teacher_comment {
+    background-color: white;
+    border-left: 0px;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    padding: 10px;
+}
+
+.category {
+    font-size: 24px;
+    text-align: left;
+}
+
+.category_info {
+    border: 0px;
+    font-size: 14px;
+    text-align: left;
+}
+
+.assessment {
+    border-bottom: 0px;
+    border-top: 0px;
+    font-size: 20px;
+}
+.div_info {
+    position: relative;
+    left: 5%;
+}
+
+.stat {
+    font-size: 20px;
+}
