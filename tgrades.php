@@ -20,7 +20,6 @@
   <nav>
     <a href="teachers.html" id="dashboard">Dashboard</a>
     <a href="participant.php">Student List </a>
-    <a href="upload.php">Upload Documents</a>
     <a href="tgrades.php">Input Grades</a>
     <a href="tcontact_info.html">Contact Info</a>
   </nav>
@@ -34,10 +33,10 @@
       <div id="data">
            
 <?php 
-  $server = "sql311.epizy.com";
-  $user = "epiz_33100670";
-  $password = "kgKnMKhpvKi";
-  $dbName = "epiz_33100670_stoodle";
+  $servername = "localhost";
+  $username = "root";
+  $password = "";
+  $dbname = "test";
 
   $connection = mysqli_connect($server, $user, $password, $dbName);
 

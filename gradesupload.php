@@ -33,7 +33,6 @@ if(isset($_POST['sub'])){
     <nav>
         <a href="teachers.html" id="dashboard">Dashboard</a>
         <a href="participant.php">Student List </a>
-        <a href="upload.php">Upload Documents</a>
         <a href="tgrades.php">Input Grades</a>
         <a href="tcontact_info.html">Contact Info</a>
     </nav>

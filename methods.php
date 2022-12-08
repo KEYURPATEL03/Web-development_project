@@ -2,7 +2,7 @@
 class method extends mysqli{
     private $state_csv = false;
     public function __construct(){
-            parent::__construct("127.0.0.1","root","","test");
+            parent::__construct("localhost","root","","test");
             if($this->connect_error){
                 echo "fail to connect to database :".$this->connect_error;
             }
@@ -43,7 +43,7 @@ class method extends mysqli{
                 $midterm = $row[5];
                 $final = $row[6];
                 $feedback = $row[7];
-                
+
                 $q = "UPDATE student SET del1 = '$del1',del2 = '$del2',del3 = '$del3',midterm = '$midterm',final = '$final',feedback = '$feedback' WHERE studentID = '$id'";
                 
                 if($this->query($q)){
@@ -60,5 +60,11 @@ class method extends mysqli{
                     }
                     fclose($file);
         }
+
+        
 }
+    
+
+
 ?>
+
