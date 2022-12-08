@@ -33,10 +33,10 @@
       <div id="data">
            
 <?php 
-  $servername = "localhost";
-  $username = "root";
+  $server = "localhost";
+  $user = "root";
   $password = "";
-  $dbname = "test";
+  $dbName = "test";
 
   $connection = mysqli_connect($server, $user, $password, $dbName);
 
