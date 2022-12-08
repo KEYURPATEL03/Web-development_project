@@ -7,15 +7,14 @@ var table = document.getElementById("table"),rIndex;
                     rIndex = this.rowIndex;
                     console.log(rIndex);
                     
-                    document.getElementById("lname").value = this.cells[0].innerHTML;
-                    document.getElementById("fname").value = this.cells[1].innerHTML;
-                    document.getElementById("studentID").value = this.cells[2].innerHTML;
-                    document.getElementById("deliverable1").value = this.cells[3].innerHTML;
-                    document.getElementById("deliverable2").value = this.cells[4].innerHTML;
-                    document.getElementById("deliverable3").value = this.cells[5].innerHTML;
-                    document.getElementById("midterm").value = this.cells[6].innerHTML;
-                    document.getElementById("final").value = this.cells[7].innerHTML;
-                    document.getElementById("feedback").value = this.cells[8].innerHTML;
+                    document.getElementById("studentID").value = this.cells[0].innerHTML;
+                    document.getElementById("name").value = this.cells[1].innerHTML;
+                    document.getElementById("deliverable1").value = this.cells[2].innerHTML;
+                    document.getElementById("deliverable2").value = this.cells[3].innerHTML;
+                    document.getElementById("deliverable3").value = this.cells[4].innerHTML;
+                    document.getElementById("midterm").value = this.cells[5].innerHTML;
+                    document.getElementById("final").value = this.cells[6].innerHTML;
+                    document.getElementById("feedback").value = this.cells[7].innerHTML;
                 };
             }
             
@@ -23,14 +22,13 @@ var table = document.getElementById("table"),rIndex;
            // edit the row
             function editRow()
             {
-                table.rows[rIndex].cells[0].innerHTML = document.getElementById("lname").value;
-                table.rows[rIndex].cells[1].innerHTML = document.getElementById("fname").value;
-                table.rows[rIndex].cells[2].innerHTML = document.getElementById("studentID").value;
-                table.rows[rIndex].cells[3].innerHTML = document.getElementById("deliverable1").value;
-                table.rows[rIndex].cells[4].innerHTML = document.getElementById("deliverable2").value;
-                table.rows[rIndex].cells[5].innerHTML = document.getElementById("deliverable3").value;
-                table.rows[rIndex].cells[6].innerHTML = document.getElementById("midterm").value;
-                table.rows[rIndex].cells[7].innerHTML = document.getElementById("final").value;
-                table.rows[rIndex].cells[8].innerHTML = document.getElementById("feedback").value;
+                table.rows[rIndex].cells[0].innerHTML = document.getElementById("studentID").value;
+                table.rows[rIndex].cells[1].innerHTML = document.getElementById("name").value;
+                table.rows[rIndex].cells[2].innerHTML = document.getElementById("deliverable1").value;
+                table.rows[rIndex].cells[3].innerHTML = document.getElementById("deliverable2").value;
+                table.rows[rIndex].cells[4].innerHTML = document.getElementById("deliverable3").value;
+                table.rows[rIndex].cells[5].innerHTML = document.getElementById("midterm").value;
+                table.rows[rIndex].cells[6].innerHTML = document.getElementById("final").value;
+                table.rows[rIndex].cells[7].innerHTML = document.getElementById("feedback").value;
             }
 

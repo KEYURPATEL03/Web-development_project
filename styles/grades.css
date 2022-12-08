@@ -44,3 +44,12 @@ th{
 
 }
 
+
+#uploadButton {
+    padding: 5px 5px;
+    font-size: large;
+    background-color: rgb(66, 207, 202);
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}

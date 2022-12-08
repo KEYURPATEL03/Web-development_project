@@ -1,21 +1,29 @@
-.content .csv{
-    margin-left: 23%;
-}
-
-.content h2 {
+.content {
     text-align: center;
+    justify-content: center;
 }
 
-.tbl_2,
+
+table,
 th,
 td {
     margin-left: 23%;
     border: 1px solid black;
     text-align: center;
     width: 50%;
-}
+    table-layout:fixed;
 
+}
 
 #head {
     background-color: gray;
+}
+
+#uploadButton {
+    padding: 5px 5px;
+    font-size: large;
+    background-color: rgb(66, 207, 202);
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
 }
