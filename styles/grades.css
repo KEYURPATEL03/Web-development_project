@@ -1,18 +1,15 @@
-
+.content {
+    text-align: center;
+    justify-content: center;
+}
 
 .container{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color:rgb(225, 226, 226);
     padding-bottom:25%;
 }
 
-.page{
-    
-    background-color: rgb(194, 220, 228);
-    
-}
 
 td{
     border: 0.5px solid rgb(0, 0, 0);
@@ -26,8 +23,6 @@ tr:hover{
 th{
     border: 0.5px solid rgb(0, 0, 0);
     padding: 10px;
-    
-    
 
 }
 
