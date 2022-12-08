@@ -100,45 +100,45 @@
     $midExam_total = array_sum($midExam);
     $finExam_total = array_sum($finExam);
 
-    sort($del1_total);
-    sort($del2_total);
-    sort($del3_total);
-    sort($midExam_total);
-    sort($finExam_total);
+    sort($deliv1);
+    sort($deliv2);
+    sort($deliv3);
+    sort($midExam);
+    sort($finExam);
 
-    $length = count($del1_total);
+    $length = count($deliv1);
     $second_half_length = $length / 2;
     $first_half_length = $second_half_length - 1;
-    $first_half = $numbers[$first_half_length];
-    $second_half = $numbers[$second_half_length];
+    $first_half = $deliv1[$first_half_length];
+    $second_half = $deliv1[$second_half_length];
     $median_del1 = ($first_half + $second_half) / 2;
 
-    $length = count($del2_total);
+    $length = count($deliv2);
     $second_half_length = $length / 2;
     $first_half_length = $second_half_length - 1;
-    $first_half = $numbers[$first_half_length];
-    $second_half = $numbers[$second_half_length];
+    $first_half = $deliv2[$first_half_length];
+    $second_half = $deliv2[$second_half_length];
     $median_del2 = ($first_half + $second_half) / 2;
 
-    $length = count($del3_total);
+    $length = count($deliv3);
     $second_half_length = $length / 2;
     $first_half_length = $second_half_length - 1;
-    $first_half = $numbers[$first_half_length];
-    $second_half = $numbers[$second_half_length];
+    $first_half = $deliv3[$first_half_length];
+    $second_half = $deliv3[$second_half_length];
     $median_del3 = ($first_half + $second_half) / 2;
 
-    $length = count($midExam_total);
+    $length = count($midExam);
     $second_half_length = $length / 2;
     $first_half_length = $second_half_length - 1;
-    $first_half = $numbers[$first_half_length];
-    $second_half = $numbers[$second_half_length];
+    $first_half = $midExam[$first_half_length];
+    $second_half = $midExam[$second_half_length];
     $median_midterm = ($first_half + $second_half) / 2;
 
-    $length = count($finExam_total);
+    $length = count($finExam);
     $second_half_length = $length / 2;
     $first_half_length = $second_half_length - 1;
-    $first_half = $numbers[$first_half_length];
-    $second_half = $numbers[$second_half_length];
+    $first_half = $finExam[$first_half_length];
+    $second_half = $finExam[$second_half_length];
     $median_final = ($first_half + $second_half) / 2;
 
     function std_deviation($arr){
@@ -153,37 +153,37 @@
 
     echo "<tr>";
     echo "<td>Deliverable #1</td>";
-    echo "<td>" . ($del1_total/count($del1_total)) . "</td>";
-    echo "<td>" . $median_del1 . "</td>";
-    echo "<td>" . std_deviation($del1_total) . "</td>";
+    echo "<td>" . ($del1_total/count($del1_total)) . "</td>"
+    echo "<td>" . $median_del1 . "</td>"
+    echo "<td>" . std_deviation($deliv1) . "</td>"
     echo "</tr>";
 
     echo "<tr>";
     echo "<td>Deliverable #2</td>";
-    echo "<td>" . ($del2_total/count($del2_total)) . "</td>";
-    echo "<td>" . $median_del2 . "</td>";
-    echo "<td>" . std_deviation($del2_total) . "</td>";
+    echo "<td>" . ($del2_total/count($del2_total)) . "</td>"
+    echo "<td>" . $median_del2 . "</td>"
+    echo "<td>" . std_deviation($deliv2) . "</td>"
     echo "</tr>";
 
     echo "<tr>";
     echo "<td>Deliverable #3</td>";
-    echo "<td>" . ($del3_total/count($del3_total)) . "</td>";
-    echo "<td>" . $median_del3 . "</td>";
-    echo "<td>" . std_deviation($del3_total) . "</td>";
+    echo "<td>" . ($del3_total/count($del3_total)) . "</td>"
+    echo "<td>" . $median_del3 . "</td>"
+    echo "<td>" . std_deviation($deliv3) . "</td>"
     echo "</tr>";
 
     echo "<tr>";
     echo "<td>Midterm</td>";
-    echo "<td>" . ($midExam_total/count($midExam_total)) . "</td>";
-    echo "<td>" . $median_midterm . "</td>";
-    echo "<td>" . std_deviation($midExam_total) . "</td>";
+    echo "<td>" . ($midExam_total/count($midExam_total)) . "</td>"
+    echo "<td>" . $median_midterm . "</td>"
+    echo "<td>" . std_deviation($midExam) . "</td>"
     echo "</tr>";
 
     echo "<tr>";
     echo "<td>Final</td>";
-    echo "<td>" . ($finExam_total/count($finExam_total)) . "</td>";
-    echo "<td>" . $median_final . "</td>";
-    echo "<td>" . std_deviation($finExam_total) . "</td>";
+    echo "<td>" . ($finExam_total/count($finExam_total)) . "</td>"
+    echo "<td>" . $median_final . "</td>"
+    echo "<td>" . std_deviation($finExam) . "</td>"
     echo "</tr>";
 
     echo "</table>";
