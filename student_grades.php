@@ -158,35 +158,35 @@
 
     echo "<tr>";
     echo "<td>Deliverable #1</td>";
-    echo "<td>" . ($del1_total/count($del1_total)) . "</td>";
+    echo "<td>" . ($del1_total/count($deliv1)) . "</td>";
     echo "<td>" . $median_del1 . "</td>";
     echo "<td>" . std_deviation($deliv1) . "</td>";
     echo "</tr>";
 
     echo "<tr>";
     echo "<td>Deliverable #2</td>";
-    echo "<td>" . ($del2_total/count($del2_total)) . "</td>";
+    echo "<td>" . ($del2_total/count($deliv2)) . "</td>";
     echo "<td>" . $median_del2 . "</td>";
     echo "<td>" . std_deviation($deliv2) . "</td>";
     echo "</tr>";
 
     echo "<tr>";
     echo "<td>Deliverable #3</td>";
-    echo "<td>" . ($del3_total/count($del3_total)) . "</td>";
+    echo "<td>" . ($del3_total/count($deliv3)) . "</td>";
     echo "<td>" . $median_del3 . "</td>";
     echo "<td>" . std_deviation($deliv3) . "</td>";
     echo "</tr>";
 
     echo "<tr>";
     echo "<td>Midterm</td>";
-    echo "<td>" . ($midExam_total/count($midExam_total)) . "</td>";
+    echo "<td>" . ($midExam_total/count($midExam)) . "</td>";
     echo "<td>" . $median_midterm . "</td>";
     echo "<td>" . std_deviation($midExam) . "</td>";
     echo "</tr>";
 
     echo "<tr>";
     echo "<td>Final</td>";
-    echo "<td>" . ($finExam_total/count($finExam_total)) . "</td>";
+    echo "<td>" . ($finExam_total/count($finExam)) . "</td>";
     echo "<td>" . $median_final . "</td>";
     echo "<td>" . std_deviation($finExam) . "</td>";
     echo "</tr>";
