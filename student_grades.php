@@ -34,10 +34,10 @@
     <br>
 
     <?php
-    $servername = "sql311.epizy.com";
-    $username = "epiz_33100670";
-    $password = "kgKnMKhpvKi";
-    $dbname = "epiz_33100670_stoodle";
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $dbname = "test";
     
     $deliv1 = array();
     $deliv2 = array();
